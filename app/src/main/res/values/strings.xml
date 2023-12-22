@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">P3B UAS Semester3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <array name="stasiun">
+        <item>Pilih</item>
+        <item>Yogyakarta, Tugu</item>
+        <item>Yogyakarta, Lempuyangan</item>
+        <item>Yogyakarta, Maguwo</item>
+        <item>Yogyakarta, Wates</item>
+        <item>Yogyakarta, Kutoarjo</item>
+        <item>Jakarta, Senayan</item>
+        <item>Jakarta, Gambir</item>
+        <item>Jakarta, Jatinegara</item>
+        <item>Jakarta, Pasar Senen</item>
+        <item>Surabaya, Pasar Turi</item>
+        <item>Surabaya, Gubeng</item>
+        <item>Bandung, Kiaracondong</item>
+        <item>Bandung, Hall</item>
+        <item>Malang, Malang</item>
+        <item>Malang, Blimbing</item>
+        <item>Semarang, Poncol</item>
+        <item>Semarang, Tawang</item>
+        <item>Mojokerto, Mojokerto</item>
+        <item>Mojokerto, Jombang</item>
+        <item>Kediri, Kertosono</item>
+        <item>Solo, Balapan</item>
+        <item>Solo, Purwosari</item>
+        <item>Solo, Solojebres</item>
+    </array>
+
+    <array name="kelas">
+        <item>Pilih</item>
+        <item>Eksekutif</item>
+        <item>Bisnis</item>
+        <item>Ekonomi</item>
+    </array>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/darker_blue</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="SplashScreenStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_brand_logo</item>
+    </style>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

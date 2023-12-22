@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.FormAdminActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello Admin"
+            android:padding="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/container_header"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Destination"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_title_page"
+            android:textColor="@color/darker_blue"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/container_rounded"
+            android:padding="20dp"
+            android:hint="Name Destination"
+            android:layout_marginTop="40dp"
+            android:id="@+id/add_name_destination"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/container_rounded"
+            android:padding="20dp"
+            android:hint="Description"
+            android:layout_marginTop="10dp"
+            android:id="@+id/add_desc"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/container_rounded"
+            android:text="Save"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:id="@+id/btn_save_add"/>
+
+</LinearLayout>

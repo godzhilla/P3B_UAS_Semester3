@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.OrderFragment"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRainPeLoka"
+            android:padding="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/container_header"
+            android:textColor="@color/white"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_header"
+            android:id="@+id/content_dashboard">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Form"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/txt_judul"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_judul"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:paddingHorizontal="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/content"
+                    android:background="@drawable/container_rounded">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tanggal Keberangkatan"
+                        android:paddingVertical="20dp"
+                        android:paddingHorizontal="30dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:id="@+id/edit_text_tanggal"
+                        />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner_asal"
+                        android:paddingHorizontal="30dp"
+                        android:paddingVertical="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/spinner"
+                        />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner_tujuan"
+                        android:paddingHorizontal="30dp"
+                        android:paddingVertical="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/spinner"
+                        />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner_class"
+                        android:paddingHorizontal="30dp"
+                        android:paddingVertical="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/content"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:orientation="vertical"
+                    android:id="@+id/paket">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_sub_judul_paket"
+                        android:textSize="20sp"
+                        android:text="Paket  :"
+                        android:textStyle="bold"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="35"
+                        android:gravity="center">
+
+                        <Switch
+                            android:id="@+id/toggleSwitch"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="50dp"
+                            android:minHeight="50dp" />
+
+                        <TextView
+                            android:id="@+id/txt_paket1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Makan siang"
+                            android:layout_toRightOf="@id/toggleSwitch"
+                            android:layout_alignTop="@id/toggleSwitch"
+                            android:layout_alignBottom="@id/toggleSwitch"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="34"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="35"
+                        android:gravity="center">
+
+                        <Switch
+                            android:id="@+id/toggleSwitch2"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="50dp"
+                            android:minHeight="50dp" />
+
+                        <TextView
+                            android:id="@+id/txt_paket2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dekat Jendela"
+                            android:layout_toRightOf="@id/toggleSwitch2"
+                            android:layout_alignTop="@id/toggleSwitch2"
+                            android:layout_alignBottom="@id/toggleSwitch2"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="34"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="35"
+                        android:gravity="center">
+
+                        <Switch
+                            android:id="@+id/toggleSwitch3"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="50dp"
+                            android:minHeight="50dp" />
+
+                        <TextView
+                            android:id="@+id/txt_paket3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wifi"
+                            android:layout_toRightOf="@id/toggleSwitch3"
+                            android:layout_alignTop="@id/toggleSwitch3"
+                            android:layout_alignBottom="@id/toggleSwitch3"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="34"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="35"
+                        android:gravity="center">
+
+                        <Switch
+                            android:id="@+id/toggleSwitch4"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="50dp"
+                            android:minHeight="50dp" />
+
+                        <TextView
+                            android:id="@+id/txt_paket4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Meja makan"
+                            android:layout_toRightOf="@id/toggleSwitch4"
+                            android:layout_alignTop="@id/toggleSwitch4"
+                            android:layout_alignBottom="@id/toggleSwitch4"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="34"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="35"
+                        android:gravity="center">
+
+                        <Switch
+                            android:id="@+id/toggleSwitch5"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="50dp"
+                            android:minHeight="50dp" />
+
+                        <TextView
+                            android:id="@+id/txt_paket5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Selimut"
+                            android:layout_toRightOf="@id/toggleSwitch5"
+                            android:layout_alignTop="@id/toggleSwitch5"
+                            android:layout_alignBottom="@id/toggleSwitch5"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="34"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="35"
+                        android:gravity="center">
+
+                        <Switch
+                            android:id="@+id/toggleSwitch6"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="50dp"
+                            android:minHeight="50dp" />
+
+                        <TextView
+                            android:id="@+id/txt_pake6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bantal"
+                            android:layout_toRightOf="@id/toggleSwitch6"
+                            android:layout_alignTop="@id/toggleSwitch6"
+                            android:layout_alignBottom="@id/toggleSwitch6"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="34"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="35"
+                        android:gravity="center">
+
+                        <Switch
+                            android:id="@+id/toggleSwitch7"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="50dp"
+                            android:minHeight="50dp" />
+
+                        <TextView
+                            android:id="@+id/txt_paket7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Toilet"
+                            android:layout_toRightOf="@id/toggleSwitch7"
+                            android:layout_alignTop="@id/toggleSwitch7"
+                            android:layout_alignBottom="@id/toggleSwitch7"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="34"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/paket"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:padding="20dp"
+                    android:background="@drawable/container_rounded"
+                    android:orientation="vertical"
+                    android:id="@+id/harga">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/paket"
+                        android:text="Total pesanan anda sejumlah"
+                        android:textSize="20sp"
+                        android:id="@+id/harga1"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/paket"
+                        android:text="Harga"
+                        android:textSize="20sp"
+                        android:id="@+id/txt_harga2"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_pesan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/blue"
+                    android:text="Pesan"
+                    android:textSize="18sp"
+                    android:paddingVertical="12dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_below="@id/harga"
+                    />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

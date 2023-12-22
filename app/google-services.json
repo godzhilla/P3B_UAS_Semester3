@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "804659573764",
+    "project_id": "p3b-uas-semester3",
+    "storage_bucket": "p3b-uas-semester3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804659573764:android:be7d076ced531fb49af151",
+        "android_client_info": {
+          "package_name": "com.example.p3buassemester3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhGDh2jxxibxxNfC-OBczUPsVQa6QiuZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
